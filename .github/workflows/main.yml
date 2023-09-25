@@ -11,7 +11,10 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-
+      - name: Set up Docker
+        uses: docker/setup-action@v2
+        with:
+          docker-version: '20.10'
       - name: log in to Docker Hub
         # uses: docker/login-action@f045a8b539a109f9f41c372932f1ae047eff08c9
         uses: docker/login-action@v1
