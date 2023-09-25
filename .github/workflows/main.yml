@@ -3,7 +3,7 @@ name: Publish Node.js Project
 on:
   push:
     branches:
-      - 'dev'
+      - 'master'
 
 jobs:
   build-node:
